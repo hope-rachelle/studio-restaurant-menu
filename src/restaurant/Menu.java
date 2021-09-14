@@ -19,8 +19,6 @@ public class Menu {
 
     @Override
     public String toString() {
-        return "Menu{" +
-                "menuItems=" + menuItems +
-                '}';
+        return "Menu: " + menuItems + lastUpdated;
     }
 }

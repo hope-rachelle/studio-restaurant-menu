@@ -11,6 +11,7 @@ public class Restaurant {
         restaurantMenu.addItem(garlicBread);
         restaurantMenu.addItem(cheesecake);
         restaurantMenu.addItem(chicken);
+        restaurantMenu.removeItem(spaghetti);
 
         System.out.println(spaghetti.toString());
         System.out.println(restaurantMenu.toString());
