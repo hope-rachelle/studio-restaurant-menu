@@ -16,13 +16,16 @@ public class MenuItem {
 
     @Override
     public String toString() {
-        return "MenuItem{" +
+            return this.name + " is a " + this.category + ". It is " + this.description + " and costs $" + price;
+            /* return "MenuItem{" +
                 "category='" + category + '\'' +
                 ", price=" + price +
                 ", description='" + description + '\'' +
                 ", name='" + name + '\'' +
                 ", isNew=" + isNew +
                 '}';
+
+         */
     }
 
     public String getCategory() {
