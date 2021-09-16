@@ -21,7 +21,12 @@ public class Menu {
     public String toString() {
         String retString = "The menu was last updated on " + this.lastUpdated + "\n";
         for(MenuItem item : menuItems){
-            retString = retString + item.toString() + "\n";
+            if(item.getDateAdded().equals(this.lastUpdated)){
+                retString = retString + item.toString() + ". This is a new item.\n";
+            } else{
+                retString = retString + item.toString() + ".\n";
+            }
+
         }
         return retString;
     }

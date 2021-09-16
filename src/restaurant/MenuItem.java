@@ -1,17 +1,21 @@
 package restaurant;
 
+import java.util.Date;
+
 public class MenuItem {
     private String category;
     private double price;
     private String description;
     private String name;
     private boolean isNew;
+    private Date dateAdded;
 
     public MenuItem(String name, String description, String category, double price){
         this.name = name;
         this.description = description;
         this.category = category;
         this.price = price;
+        this.dateAdded = new Date();
     }
 
     @Override
@@ -68,4 +72,11 @@ public class MenuItem {
         isNew = aNew;
     }
 
+    public Date getDateAdded() {
+        return dateAdded;
+    }
+
+    public void setDateAdded(Date dateAdded) {
+        this.dateAdded = dateAdded;
+    }
 }

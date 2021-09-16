@@ -1,5 +1,7 @@
 package restaurant;
 
+import java.util.Date;
+
 public class Restaurant {
     public static void main(String[] args) {
         Menu restaurantMenu = new Menu();
@@ -12,6 +14,12 @@ public class Restaurant {
         restaurantMenu.addItem(cheesecake);
         restaurantMenu.addItem(chicken);
         restaurantMenu.removeItem(spaghetti);
+
+        //Setting cheescake to be an old item on the menu
+        Date testDate = new Date();
+        testDate.setYear(100);
+        cheesecake.setDateAdded(testDate);
+
 
         System.out.println(spaghetti.toString());
         System.out.println(restaurantMenu.toString());
